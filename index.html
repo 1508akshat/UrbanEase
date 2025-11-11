@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>UrbanEase | Discover the smarter side of city living</title>
+	<meta name="description" content="UrbanEase helps you discover restaurants, fitness, and salons around you. A lifestyle discovery platform inspired by Zomato and CRED." />
+	<meta name="keywords" content="UrbanEase, lifestyle, discovery, restaurants, fitness, salons, city living" />
+	<meta name="author" content="UrbanEase" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="images/favicon.png" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar">
+			<a href="index.html" class="logo">UrbanEase</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+			<ul class="nav-links">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="explore.html">Explore</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<h1>Discover the smarter side of city living.</h1>
+				<p>Explore curated spots for food, fitness, and self-care—tailored to modern urban life.</p>
+				<div style="display:flex; gap:10px; flex-wrap:wrap;">
+					<a href="explore.html" class="btn btn-primary">Start Exploring</a>
+					<a href="contact.html" class="btn btn-secondary">Contact Us</a>
+				</div>
+			</div>
+			<div class="hero-art" aria-hidden="true"></div>
+		</section>
+
+		<section class="container">
+			<header class="page-header">
+				<h1 style="font-size:1.6rem;">Top categories</h1>
+				<p>Handpicked areas to get you started.</p>
+			</header>
+			<div class="card-grid">
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Cozy restaurant interior with warm lighting and modern seating" />
+					<div class="card-body">
+						<h2>Restaurants</h2>
+						<p>New openings, trending kitchens, and local favorites.</p>
+						<a href="explore.html" class="btn btn-secondary" aria-label="Explore restaurants">Explore</a>
+					</div>
+				</article>
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1200&q=80" alt="Person stretching with gym equipment in a modern studio" />
+					<div class="card-body">
+						<h2>Fitness</h2>
+						<p>Studios, strength, mobility, and mindful movement.</p>
+						<a href="explore.html" class="btn btn-secondary" aria-label="Explore fitness">Explore</a>
+					</div>
+				</article>
+				<article class="card">
+					<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Modern salon interior with styling chairs, mirrors, and professional hair styling equipment" />
+					<div class="card-body">
+						<h2>Salons</h2>
+						<p>Cut, color, spa, and everything self‑care.</p>
+						<a href="explore.html" class="btn btn-secondary" aria-label="Explore salons">Explore</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="container content">
+			<h2>Why UrbanEase</h2>
+			<p>Clean design, real recommendations, and fast discovery—so you spend less time searching and more time enjoying your city.</p>
+			<ul style="margin:12px 0 0 18px;">
+				<li>Curated lists for restaurants, fitness, and self‑care</li>
+				<li>Gender‑neutral, modern dark theme that’s easy on the eyes</li>
+				<li>Built for speed with smooth interactions</li>
+			</ul>
+		</section>
+
+		<section class="container" style="margin-bottom:64px;">
+			<div class="content" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+				<div>
+					<h2 style="margin:0 0 6px 0;">Ready to explore your city?</h2>
+					<p style="margin:0; color:var(--muted);">Jump into categories or drop us a message for suggestions.</p>
+				</div>
+				<div style="display:flex; gap:10px;">
+					<a href="explore.html" class="btn btn-primary">Explore now</a>
+					<a href="contact.html" class="btn btn-secondary">Get in touch</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> UrbanEase • Designed for modern, gender-neutral city living</p>
+	</footer>
+
+	<!-- Chatbot -->
+	<div class="chatbot">
+		<button class="chatbot-bubble" aria-label="Open chat">💬</button>
+		<div class="chatbot-window" role="dialog" aria-modal="false" aria-labelledby="chatbot-title">
+			<div class="chatbot-header">
+				<strong id="chatbot-title">UrbanEase Assistant</strong>
+				<button class="chatbot-close" aria-label="Close chat">×</button>
+			</div>
+			<div class="chatbot-messages" aria-live="polite"></div>
+			<form class="chatbot-input" autocomplete="off">
+				<label class="sr-only" for="chat-input">Type your message</label>
+				<input id="chat-input" type="text" name="message" placeholder="Type a message..." required />
+				<button type="submit" class="btn btn-compact">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="chatbot.js" defer></script>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
+

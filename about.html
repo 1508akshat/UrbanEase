@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>About | UrbanEase</title>
+	<meta name="description" content="UrbanEase is a lifestyle discovery platform inspired by Zomato and CRED, built for modern urban living." />
+	<meta name="keywords" content="About UrbanEase, lifestyle platform, Zomato inspired, CRED inspired" />
+	<meta name="author" content="UrbanEase" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="images/favicon.png" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar">
+			<a href="index.html" class="logo">UrbanEase</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="explore.html">Explore</a></li>
+				<li><a class="active" href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<header class="page-header">
+			<h1>About UrbanEase</h1>
+			<p>A lifestyle discovery platform inspired by Zomato and CRED.</p>
+		</header>
+
+		<section class="content about-grid">
+			<section>
+				<h2>Our Story</h2>
+				<p>UrbanEase was born out of a simple insight: city living should feel inspiring, not overwhelming. We loved the curation of Zomato and the premium feel of CRED, so we combined the best of both worlds into one dark, modern experience that celebrates every kind of urban explorer.</p>
+			</section>
+
+			<section>
+				<h2>What We Deliver</h2>
+				<ul>
+					<li>Editorially curated lists that spotlight restaurants, fitness studios, salons, and specialty services.</li>
+					<li>Context-rich highlights—photos, descriptions, and quick actions—designed for people on the go.</li>
+					<li>Personalized touchpoints such as the UrbanEase chatbot and responsive design for every screen.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>UrbanEase Mission</h2>
+				<p>To empower urban communities to discover and enjoy the best of their city with simplicity, trust, and style. We keep things gender-neutral, accessible, and friendly so anyone can plan their next outing or routine with confidence.</p>
+			</section>
+
+			<section>
+				<h2>Core Values</h2>
+				<ul>
+					<li><strong>Clarity:</strong> Less noise, more meaningful choices.</li>
+					<li><strong>Credibility:</strong> Partnering with verified brands and community feedback.</li>
+					<li><strong>Care:</strong> Experiences that nurture wellness, connection, and joy.</li>
+				</ul>
+			</section>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> UrbanEase • Inspired by modern urban life</p>
+	</footer>
+
+	<!-- Chatbot -->
+	<div class="chatbot">
+		<button class="chatbot-bubble" aria-label="Open chat">💬</button>
+		<div class="chatbot-window" role="dialog" aria-modal="false" aria-labelledby="chatbot-title">
+			<div class="chatbot-header">
+				<strong id="chatbot-title">UrbanEase Assistant</strong>
+				<button class="chatbot-close" aria-label="Close chat">×</button>
+			</div>
+			<div class="chatbot-messages" aria-live="polite"></div>
+			<form class="chatbot-input" autocomplete="off">
+				<label class="sr-only" for="chat-input">Type your message</label>
+				<input id="chat-input" type="text" name="message" placeholder="Type a message..." required />
+				<button type="submit" class="btn btn-compact">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="chatbot.js" defer></script>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Contact | UrbanEase</title>
+	<meta name="description" content="Contact UrbanEase. Send us your queries and feedback." />
+	<meta name="keywords" content="Contact UrbanEase, support, feedback" />
+	<meta name="author" content="UrbanEase" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="images/favicon.png" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar">
+			<a href="index.html" class="logo">UrbanEase</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="explore.html">Explore</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a class="active" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<header class="page-header">
+			<h1>Contact Us</h1>
+			<p>We'd love to hear from you. Send a message and we'll respond soon.</p>
+		</header>
+
+		<section class="content">
+			<form class="contact-form" aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thanks for reaching out! We will get back to you soon.'); this.reset();">
+				<div class="form-row">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Your full name" required />
+				</div>
+				<div class="form-row">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="your@email.com" required />
+				</div>
+				<div class="form-row">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" placeholder="How can we help?" rows="5" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> UrbanEase • We’re here to help</p>
+	</footer>
+
+	<!-- Chatbot -->
+	<div class="chatbot">
+		<button class="chatbot-bubble" aria-label="Open chat">💬</button>
+		<div class="chatbot-window" role="dialog" aria-modal="false" aria-labelledby="chatbot-title">
+			<div class="chatbot-header">
+				<strong id="chatbot-title">UrbanEase Assistant</strong>
+				<button class="chatbot-close" aria-label="Close chat">×</button>
+			</div>
+			<div class="chatbot-messages" aria-live="polite"></div>
+			<form class="chatbot-input" autocomplete="off">
+				<label class="sr-only" for="chat-input">Type your message</label>
+				<input id="chat-input" type="text" name="message" placeholder="Type a message..." required />
+				<button type="submit" class="btn btn-compact">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="chatbot.js" defer></script>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
+

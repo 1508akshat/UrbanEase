@@ -1,0 +1,9 @@
+Add your images here:
+- restaurants.jpg
+- fitness.jpg
+- salons.jpg
+- favicon.png
+
+Make sure to keep descriptive alt text in HTML for accessibility and SEO.
+
+

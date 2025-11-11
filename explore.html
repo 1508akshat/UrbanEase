@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Explore | UrbanEase</title>
+	<meta name="description" content="Explore UrbanEase categories: Restaurants, Fitness, and Salons with a clean, modern experience." />
+	<meta name="keywords" content="UrbanEase explore, restaurants, fitness, salons, city guide" />
+	<meta name="author" content="UrbanEase" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="images/favicon.png" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
+</head>
+<body>
+	<header class="site-header">
+		<nav class="navbar">
+			<a href="index.html" class="logo">UrbanEase</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="explore.html">Explore</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<header class="page-header">
+			<h1>Explore</h1>
+			<p>Find the best of your city across food, fitness, and self-care.</p>
+		</header>
+
+		<section class="card-grid">
+				<article class="card">
+				<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80" alt="A table with modern dishes at a contemporary city restaurant interior" />
+				<div class="card-body">
+					<h2>Restaurants</h2>
+					<p>Discover trending spots, hidden gems, and reliable classics near you.</p>
+					<a class="btn btn-secondary" href="restaurants.html" aria-label="Explore restaurants">Explore</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Minimal gym setup with modern equipment and teal-accent lighting" />
+				<div class="card-body">
+					<h2>Fitness</h2>
+					<p>Studios, gyms, and outdoor sessions designed for every fitness journey.</p>
+					<a class="btn btn-secondary" href="fitness.html" aria-label="Explore fitness">Explore</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Modern salon interior with styling chairs, mirrors, and professional hair styling equipment" />
+				<div class="card-body">
+					<h2>Salons</h2>
+					<p>Self-care made simple—salons and spas reviewed by your community.</p>
+					<a class="btn btn-secondary" href="salons.html" aria-label="Explore salons">Explore</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="Wellness spa products including massage oil, stones, and towels on a tray" />
+				<div class="card-body">
+					<h2>Wellness Products</h2>
+					<p>Curated oils, bath salts, and aromatherapy picks for at‑home relaxation.</p>
+					<a class="btn btn-secondary" href="wellness.html" aria-label="Explore wellness products">Explore</a>
+				</div>
+			</article>
+
+			<article class="card">
+				<img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1200&q=80" alt="Hair spa treatment with nourishing oils and steam therapy for grooming and self-care" />
+				<div class="card-body">
+					<h2>Grooming</h2>
+					<p>Minimal skincare and grooming essentials recommended by the community.</p>
+					<a class="btn btn-secondary" href="grooming.html" aria-label="Explore grooming products">Explore</a>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© <span id="year"></span> UrbanEase • Explore the smarter side of city living</p>
+	</footer>
+
+	<!-- Chatbot -->
+	<div class="chatbot">
+		<button class="chatbot-bubble" aria-label="Open chat">💬</button>
+		<div class="chatbot-window" role="dialog" aria-modal="false" aria-labelledby="chatbot-title">
+			<div class="chatbot-header">
+				<strong id="chatbot-title">UrbanEase Assistant</strong>
+				<button class="chatbot-close" aria-label="Close chat">×</button>
+			</div>
+			<div class="chatbot-messages" aria-live="polite"></div>
+			<form class="chatbot-input" autocomplete="off">
+				<label class="sr-only" for="chat-input">Type your message</label>
+				<input id="chat-input" type="text" name="message" placeholder="Type a message..." required />
+				<button type="submit" class="btn btn-compact">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="chatbot.js" defer></script>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
+
