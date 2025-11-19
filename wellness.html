@@ -29,6 +29,7 @@
 			<ul class="nav-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a class="active" href="explore.html">Explore</a></li>
+				<li><a href="cart.html">My Cart <span class="cart-count-badge" data-cart-count>0</span></a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -50,6 +51,14 @@
 						<h3>Aromatherapy</h3>
 						<p>Essential oil blends, diffusers, and scented candles. Create a calming atmosphere with natural fragrances for relaxation and focus.</p>
 						<div class="price-range">₹299 – ₹1,200</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-aromatherapy"
+							data-name="Aromatherapy Set"
+							data-price="799"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -59,6 +68,14 @@
 						<h3>Meditation</h3>
 						<p>Guided meditation sessions, meditation cushions, and mindfulness tools. Online and in-person sessions for all experience levels.</p>
 						<div class="price-range">₹199 – ₹800</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-meditation"
+							data-name="Meditation Kit"
+							data-price="499"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -68,6 +85,14 @@
 						<h3>Relaxation Kits</h3>
 						<p>Curated sets including bath bombs, Epsom salts, herbal teas, and eye masks. Everything you need for a perfect self-care evening.</p>
 						<div class="price-range">₹499 – ₹1,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-relax-kits"
+							data-name="Relaxation Kit"
+							data-price="999"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -77,6 +102,14 @@
 						<h3>Essential Oils</h3>
 						<p>Pure, therapeutic-grade essential oils in various scents. Lavender, eucalyptus, peppermint, and custom blends for wellness and aromatherapy.</p>
 						<div class="price-range">₹249 – ₹999</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-essential-oils"
+							data-name="Essential Oils Set"
+							data-price="699"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -86,6 +119,14 @@
 						<h3>Spa Products</h3>
 						<p>Luxurious body scrubs, massage oils, and hydrating lotions. Bring the spa experience home with premium, natural ingredients.</p>
 						<div class="price-range">₹399 – ₹1,299</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-spa-products"
+							data-name="Spa Products Set"
+							data-price="899"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -95,6 +136,14 @@
 						<h3>Herbal Teas</h3>
 						<p>Organic herbal tea blends for relaxation, sleep, and wellness. Chamomile, green tea, and custom wellness blends available.</p>
 						<div class="price-range">₹199 – ₹699</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="wellness-herbal-teas"
+							data-name="Herbal Tea Collection"
+							data-price="499"
+							data-category="Wellness"
+						>Add to cart</button>
 					</div>
 				</article>
 			</div>
@@ -108,7 +157,14 @@
 					<h3>Complete Wellness Starter Kit</h3>
 					<p>Essential oils, diffuser, meditation guide, and relaxation tea. Perfect introduction to at-home wellness practices.</p>
 					<div class="offer-price">₹1,299 <span class="offer-original">₹1,899</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-wellness-starter"
+						data-name="Complete Wellness Starter Kit"
+						data-price="1299"
+						data-category="Wellness Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -116,7 +172,14 @@
 					<h3>Luxury Spa Night Bundle</h3>
 					<p>Bath bombs, body scrub, massage oil, candles, and herbal tea. Create the ultimate spa experience in your home.</p>
 					<div class="offer-price">₹899 <span class="offer-original">₹1,400</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-luxury-spa-night"
+						data-name="Luxury Spa Night Bundle"
+						data-price="899"
+						data-category="Wellness Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -124,7 +187,14 @@
 					<h3>Monthly Meditation Subscription</h3>
 					<p>4 guided meditation sessions per month, meditation cushion, and access to online library. Start your mindfulness journey.</p>
 					<div class="offer-price">₹599 <span class="offer-original">₹999</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-meditation-subscription"
+						data-name="Monthly Meditation Subscription"
+						data-price="599"
+						data-category="Wellness Offer"
+					>Add to cart</button>
 				</article>
 			</div>
 		</section>
@@ -160,6 +230,7 @@
 	</div>
 
 	<script src="chatbot.js" defer></script>
+	<script src="cart.js" defer></script>
 	<script>
 		document.getElementById('year').textContent = new Date().getFullYear();
 	</script>

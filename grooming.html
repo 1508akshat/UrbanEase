@@ -29,6 +29,7 @@
 			<ul class="nav-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a class="active" href="explore.html">Explore</a></li>
+				<li><a href="cart.html">My Cart <span class="cart-count-badge" data-cart-count>0</span></a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -50,6 +51,14 @@
 						<h3>Skincare</h3>
 						<p>Face cleansers, moisturizers, serums, and sunscreens. Complete skincare routines for all skin types and concerns.</p>
 						<div class="price-range">₹399 – ₹1,999</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-skincare"
+							data-name="Skincare Essentials"
+							data-price="999"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -59,6 +68,14 @@
 						<h3>Beard Care</h3>
 						<p>Beard oils, balms, brushes, and trimmers. Keep your beard soft, styled, and well-maintained with premium products.</p>
 						<div class="price-range">₹299 – ₹1,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-beard-care"
+							data-name="Beard Care Kit"
+							data-price="899"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -68,6 +85,14 @@
 						<h3>Shaving Kits</h3>
 						<p>Complete shaving sets with razors, shaving cream, brushes, and aftershave. Classic wet shaving essentials for a smooth finish.</p>
 						<div class="price-range">₹499 – ₹2,499</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-shaving-kits"
+							data-name="Shaving Kit"
+							data-price="1299"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -77,6 +102,14 @@
 						<h3>Men's Essentials</h3>
 						<p>Deodorants, body washes, face moisturizers, and daily grooming products. Complete men's grooming routine in one place.</p>
 						<div class="price-range">₹249 – ₹1,299</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-mens-essentials"
+							data-name="Men's Essentials Pack"
+							data-price="799"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -86,6 +119,14 @@
 						<h3>Women's Essentials</h3>
 						<p>Face masks, serums, toners, and specialized skincare products. Curated essentials for a complete beauty routine.</p>
 						<div class="price-range">₹349 – ₹1,799</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-womens-essentials"
+							data-name="Women's Essentials Pack"
+							data-price="1099"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -95,6 +136,14 @@
 						<h3>Grooming Combos</h3>
 						<p>Value packs combining multiple products. Perfect starter kits or gift sets with complementary grooming essentials.</p>
 						<div class="price-range">₹599 – ₹2,499</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="groom-combos"
+							data-name="Grooming Combo"
+							data-price="1499"
+							data-category="Grooming"
+						>Add to cart</button>
 					</div>
 				</article>
 			</div>
@@ -108,7 +157,14 @@
 					<h3>Complete Grooming Starter Kit</h3>
 					<p>Face wash, moisturizer, deodorant, and grooming accessories. Everything you need to start a proper grooming routine.</p>
 					<div class="offer-price">₹1,199 <span class="offer-original">₹1,799</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-groom-starter-kit"
+						data-name="Complete Grooming Starter Kit"
+						data-price="1199"
+						data-category="Grooming Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -116,7 +172,14 @@
 					<h3>Premium Shaving Set</h3>
 					<p>Safety razor, shaving brush, premium shaving cream, and aftershave balm. Classic wet shaving experience at home.</p>
 					<div class="offer-price">₹1,999 <span class="offer-original">₹2,999</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-premium-shaving-set"
+						data-name="Premium Shaving Set"
+						data-price="1999"
+						data-category="Grooming Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -124,7 +187,14 @@
 					<h3>Beard Care Combo</h3>
 					<p>Beard oil, beard balm, comb, and trimmer. Complete beard maintenance kit for a well-groomed look.</p>
 					<div class="offer-price">₹1,499 <span class="offer-original">₹2,200</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-beard-combo"
+						data-name="Beard Care Combo"
+						data-price="1499"
+						data-category="Grooming Offer"
+					>Add to cart</button>
 				</article>
 			</div>
 		</section>
@@ -160,6 +230,7 @@
 	</div>
 
 	<script src="chatbot.js" defer></script>
+	<script src="cart.js" defer></script>
 	<script>
 		document.getElementById('year').textContent = new Date().getFullYear();
 	</script>

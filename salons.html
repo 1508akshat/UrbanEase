@@ -29,6 +29,7 @@
 			<ul class="nav-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a class="active" href="explore.html">Explore</a></li>
+				<li><a href="cart.html">My Cart <span class="cart-count-badge" data-cart-count>0</span></a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -50,6 +51,14 @@
 						<h3>Hair Styling</h3>
 						<p>Expert haircuts, coloring, highlights, and styling services. From classic cuts to trendy transformations.</p>
 						<div class="price-range">₹500 – ₹2,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-hair-styling"
+							data-name="Hair Styling"
+							data-price="1500"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -59,6 +68,14 @@
 						<h3>Spa & Massage</h3>
 						<p>Rejuvenating massages, aromatherapy, and body treatments. Swedish, deep tissue, and hot stone options available.</p>
 						<div class="price-range">₹1,200 – ₹3,999</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-spa-massage"
+							data-name="Spa & Massage"
+							data-price="2499"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -68,6 +85,14 @@
 						<h3>Skin Treatments</h3>
 						<p>Professional facials, chemical peels, and anti-aging treatments. Customized skincare solutions for all skin types.</p>
 						<div class="price-range">₹800 – ₹2,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-skin-treatments"
+							data-name="Skin Treatments"
+							data-price="1800"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -77,6 +102,14 @@
 						<h3>Nail Care</h3>
 						<p>Manicures, pedicures, nail art, and gel polish services. Keep your hands and feet looking polished and healthy.</p>
 						<div class="price-range">₹299 – ₹1,200</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-nail-care"
+							data-name="Nail Care"
+							data-price="900"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -86,6 +119,14 @@
 						<h3>Hair Spa</h3>
 						<p>Deep conditioning treatments, hair masks, and scalp massages. Restore shine, strength, and manageability to your hair.</p>
 						<div class="price-range">₹600 – ₹1,800</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-hair-spa"
+							data-name="Hair Spa"
+							data-price="1300"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -95,6 +136,15 @@
 						<h3>Bridal & Makeup</h3>
 						<p>Complete bridal packages, party makeup, and special occasion styling. Professional artists for your big day.</p>
 						<div class="price-range">₹1,500 – ₹3,999</div>
+						<div class="price-range">₹1,500 – ₹3,999</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="salon-bridal-makeup"
+							data-name="Bridal & Makeup"
+							data-price="3200"
+							data-category="Salon"
+						>Add to cart</button>
 					</div>
 				</article>
 			</div>
@@ -108,7 +158,14 @@
 					<h3>Complete Hair Makeover</h3>
 					<p>Haircut, coloring, and styling package. Includes consultation, premium products, and finishing touches. Perfect for a fresh new look.</p>
 					<div class="offer-price">₹2,499 <span class="offer-original">₹3,500</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-hair-makeover"
+						data-name="Complete Hair Makeover"
+						data-price="2499"
+						data-category="Salon Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -116,7 +173,14 @@
 					<h3>Full Body Spa Package</h3>
 					<p>90-minute full body massage, facial, and pedicure. Includes aromatherapy, steam, and refreshments. Ultimate relaxation experience.</p>
 					<div class="offer-price">₹3,499 <span class="offer-original">₹4,800</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-full-spa"
+						data-name="Full Body Spa Package"
+						data-price="3499"
+						data-category="Salon Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -124,7 +188,14 @@
 					<h3>Haircut & Styling Combo</h3>
 					<p>Professional haircut with wash, blow-dry, and styling. Quick and affordable option for regular maintenance. Walk-ins welcome.</p>
 					<div class="offer-price">₹699 <span class="offer-original">₹1,000</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-haircut-styling"
+						data-name="Haircut & Styling Combo"
+						data-price="699"
+						data-category="Salon Offer"
+					>Add to cart</button>
 				</article>
 			</div>
 		</section>
@@ -160,6 +231,7 @@
 	</div>
 
 	<script src="chatbot.js" defer></script>
+	<script src="cart.js" defer></script>
 	<script>
 		document.getElementById('year').textContent = new Date().getFullYear();
 	</script>

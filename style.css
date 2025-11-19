@@ -294,82 +294,11 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 0.7px;
 }
-.cart-showcase {
-	background: var(--bg-elev);
-	border: 1px solid rgba(255,255,255,0.06);
-	border-radius: var(--radius);
-	padding: 28px 24px 36px;
-	box-shadow: var(--shadow);
-	margin-bottom: 64px;
-}
-.cart-header {
-	text-align: left;
-	margin-bottom: 28px;
-}
-.cart-header h2 {
-	margin: 8px 0 6px;
-	font-size: clamp(1.5rem, 3vw, 2.2rem);
-}
-.cart-header p {
-	margin: 0;
-	color: var(--muted);
-	max-width: 60ch;
-}
-.cart-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 18px;
-}
-.cart-card {
-	background: rgba(255,255,255,0.02);
-	border: 1px solid rgba(255,255,255,0.06);
-	border-radius: var(--radius-sm);
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	transition: border-color 0.2s ease, transform 0.2s ease;
-}
-.cart-card:hover {
-	border-color: rgba(0,191,166,0.35);
-	transform: translateY(-4px);
-}
-.cart-card img {
-	height: 200px;
-	object-fit: cover;
-	width: 100%;
-}
-.cart-details {
-	padding: 18px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-.cart-details h3 {
-	margin: 0;
-	font-size: 1.1rem;
-}
-.cart-details p {
-	margin: 0;
-	color: var(--muted);
-}
-.cart-meta {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 12px;
-}
+
 .cart-price {
 	font-weight: 700;
 	color: var(--accent);
 	font-size: 1.1rem;
-}
-.btn-cart {
-	border-color: rgba(0,191,166,0.3);
-	font-size: 0.92rem;
-	padding-inline: 16px;
-}
-.btn-cart:hover {
-	background: rgba(0,191,166,0.18);
 }
 .home-social {
 	background: var(--bg-elev);
@@ -725,6 +654,129 @@ img {
 	margin: 0 0 24px 0;
 }
 
+/* Cart page */
+.cart-page {
+	display: grid;
+	grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+	gap: 24px;
+	margin-bottom: 64px;
+}
+
+.cart-main {
+	background: var(--bg-elev);
+	border-radius: var(--radius);
+	border: 1px solid rgba(255,255,255,0.06);
+	padding: 20px;
+	box-shadow: var(--shadow);
+}
+
+.cart-empty {
+	margin: 0;
+	color: var(--muted);
+}
+
+.cart-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 12px;
+}
+
+.cart-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 12px 14px;
+	border-radius: var(--radius-sm);
+	border: 1px solid rgba(255,255,255,0.06);
+	background: rgba(255,255,255,0.02);
+}
+
+.cart-item-main h3 {
+	margin: 0 0 4px 0;
+	font-size: 1rem;
+}
+
+.cart-item-meta {
+	margin: 0 0 4px 0;
+	color: var(--muted);
+	font-size: 0.85rem;
+}
+
+.cart-item-price {
+	margin: 0;
+	font-weight: 600;
+	color: var(--accent);
+}
+
+.cart-summary {
+	background: var(--bg-elev);
+	border-radius: var(--radius);
+	border: 1px solid rgba(255,255,255,0.06);
+	padding: 20px;
+	box-shadow: var(--shadow);
+	height: fit-content;
+}
+
+.cart-summary h2 {
+	margin: 0 0 12px 0;
+}
+
+.cart-summary-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+
+.cart-summary-row span {
+	color: var(--muted);
+}
+
+.cart-summary-row strong {
+	font-size: 1.2rem;
+}
+
+.cart-count-badge {
+	display: none;
+	margin-left: 6px;
+	min-width: 20px;
+	height: 20px;
+	padding: 0 6px;
+	border-radius: 999px;
+	background: var(--accent);
+	color: #062a25;
+	font-size: 0.75rem;
+	font-weight: 700;
+	align-items: center;
+	justify-content: center;
+}
+
+.cart-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 24px;
+	transform: translateX(-50%);
+	background: var(--bg-elev);
+	color: var(--text);
+	padding: 10px 16px;
+	border-radius: 999px;
+	border: 1px solid rgba(0,191,166,0.4);
+	box-shadow: var(--shadow);
+	font-size: 0.9rem;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+	z-index: 1200;
+}
+
+.cart-toast.show {
+	opacity: 1;
+	transform: translate(-50%, -4px);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
 	.hero {
@@ -772,6 +824,9 @@ img {
 		grid-template-columns: 1fr;
 	}
 	.cart-grid {
+		grid-template-columns: 1fr;
+	}
+	.cart-page {
 		grid-template-columns: 1fr;
 	}
 	.service-grid {

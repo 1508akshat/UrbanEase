@@ -29,6 +29,7 @@
 			<ul class="nav-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a class="active" href="explore.html">Explore</a></li>
+				<li><a href="cart.html">My Cart <span class="cart-count-badge" data-cart-count>0</span></a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -49,7 +50,15 @@
 					<div class="service-card-body">
 						<h3>Fine Dining</h3>
 						<p>Upscale restaurants offering gourmet cuisine, curated wine lists, and exceptional service for special occasions.</p>
-						<div class="price-range">₹800 – ₹2500</div>
+						<div class="price-range">₹800 – ₹2,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-fine-dining"
+							data-name="Fine Dining Experience"
+							data-price="1500"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -59,6 +68,14 @@
 						<h3>Cafes</h3>
 						<p>Relaxed spaces perfect for coffee, brunch, and light meals. Ideal for work meetings or casual catch-ups.</p>
 						<div class="price-range">₹300 – ₹800</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-cafes"
+							data-name="Cafe Visit"
+							data-price="500"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -68,6 +85,14 @@
 						<h3>Street Food</h3>
 						<p>Authentic local flavors from food stalls and carts. Quick, affordable, and bursting with regional taste.</p>
 						<div class="price-range">₹50 – ₹300</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-street-food"
+							data-name="Street Food Tour"
+							data-price="250"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -76,7 +101,15 @@
 					<div class="service-card-body">
 						<h3>Family Restaurants</h3>
 						<p>Kid-friendly venues with diverse menus, comfortable seating, and options for all dietary preferences.</p>
-						<div class="price-range">₹400 – ₹1200</div>
+						<div class="price-range">₹400 – ₹1,200</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-family"
+							data-name="Family Restaurant Meal"
+							data-price="900"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -85,7 +118,15 @@
 					<div class="service-card-body">
 						<h3>Buffets</h3>
 						<p>All-you-can-eat spreads featuring multiple cuisines, live counters, and dessert stations for unlimited indulgence.</p>
-						<div class="price-range">₹500 – ₹1500</div>
+						<div class="price-range">₹500 – ₹1,500</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-buffets"
+							data-name="Buffet Experience"
+							data-price="1200"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 
@@ -94,7 +135,15 @@
 					<div class="service-card-body">
 						<h3>Chef's Specials</h3>
 						<p>Exclusive dishes crafted by renowned chefs. Limited-time menus showcasing culinary innovation and seasonal ingredients.</p>
-						<div class="price-range">₹600 – ₹2000</div>
+						<div class="price-range">₹600 – ₹2,000</div>
+						<button
+							class="btn btn-secondary btn-add-to-cart"
+							type="button"
+							data-id="rest-chef-specials"
+							data-name="Chef's Special"
+							data-price="1800"
+							data-category="Restaurants"
+						>Add to cart</button>
 					</div>
 				</article>
 			</div>
@@ -108,7 +157,14 @@
 					<h3>3-Course Fine Dining Experience</h3>
 					<p>Enjoy a complete fine dining experience with appetizer, main course, and dessert. Valid for parties of 2 or more.</p>
 					<div class="offer-price">₹1,499 <span class="offer-original">₹2,200</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-fine-dining-3course"
+						data-name="3-Course Fine Dining Experience"
+						data-price="1499"
+						data-category="Restaurant Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -116,7 +172,14 @@
 					<h3>Weekend Brunch Special</h3>
 					<p>Unlimited brunch with bottomless coffee and fresh pastries. Perfect for lazy weekend mornings with friends.</p>
 					<div class="offer-price">₹599 <span class="offer-original">₹850</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-weekend-brunch"
+						data-name="Weekend Brunch Special"
+						data-price="599"
+						data-category="Restaurant Offer"
+					>Add to cart</button>
 				</article>
 
 				<article class="offer-card">
@@ -124,7 +187,14 @@
 					<h3>Street Food Tour Package</h3>
 					<p>Guided tour of top street food spots with tastings at 5 different vendors. Includes local favorites and hidden gems.</p>
 					<div class="offer-price">₹799 <span class="offer-original">₹1,200</span></div>
-					<a href="contact.html" class="btn btn-primary">Book Now</a>
+					<button
+						class="btn btn-primary btn-add-to-cart"
+						type="button"
+						data-id="offer-street-food-tour"
+						data-name="Street Food Tour Package"
+						data-price="799"
+						data-category="Restaurant Offer"
+					>Add to cart</button>
 				</article>
 			</div>
 		</section>
@@ -160,6 +230,7 @@
 	</div>
 
 	<script src="chatbot.js" defer></script>
+	<script src="cart.js" defer></script>
 	<script>
 		document.getElementById('year').textContent = new Date().getFullYear();
 	</script>
