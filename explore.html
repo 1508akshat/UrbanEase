@@ -20,21 +20,15 @@
 		gtag('js', new Date());
 		gtag('config', 'G-GXRLNTZ9YM');
 	</script>
+
+	<meta property="og:title" content="UrbanEase | Discover the smarter side of city living" />
+	<meta property="og:description" content="Explore curated spots for food, fitness, and self-care." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://urbanease.com" />
+	<meta property="og:image" content="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" />
 </head>
 <body>
-	<header class="site-header">
-		<nav class="navbar">
-			<a href="index.html" class="logo">UrbanEase</a>
-			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a class="active" href="explore.html">Explore</a></li>
-				<li><a href="cart.html">My Cart <span class="cart-count-badge" data-cart-count>0</span></a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	<site-header></site-header>
 
 	<main class="container">
 		<header class="page-header">
@@ -90,32 +84,16 @@
 		</section>
 	</main>
 
-	<footer class="site-footer">
-		<p>© <span id="year"></span> UrbanEase • Explore the smarter side of city living</p>
-	</footer>
+	<site-footer></site-footer>
 
 	<!-- Chatbot -->
-	<div class="chatbot">
-		<button class="chatbot-bubble" aria-label="Open chat">💬</button>
-		<div class="chatbot-window" role="dialog" aria-modal="false" aria-labelledby="chatbot-title">
-			<div class="chatbot-header">
-				<strong id="chatbot-title">UrbanEase Assistant</strong>
-				<button class="chatbot-close" aria-label="Close chat">×</button>
-			</div>
-			<div class="chatbot-messages" aria-live="polite"></div>
-			<form class="chatbot-input" autocomplete="off">
-				<label class="sr-only" for="chat-input">Type your message</label>
-				<input id="chat-input" type="text" name="message" placeholder="Type a message..." required />
-				<button type="submit" class="btn btn-compact">Send</button>
-			</form>
-		</div>
-	</div>
+	<urban-chatbot></urban-chatbot>
 
+
+	<script src="components.js" defer></script>
 	<script src="chatbot.js" defer></script>
 	<script src="cart.js" defer></script>
-	<script>
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
+	
 </body>
 </html>
 

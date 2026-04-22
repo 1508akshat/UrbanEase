@@ -23,6 +23,7 @@ html, body {
 	color: var(--text);
 	font-family: 'Inter', 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 	line-height: 1.6;
+	scroll-behavior: smooth;
 }
 
 img {
@@ -841,6 +842,36 @@ img {
 	.cta-content h2 {
 		font-size: 1.5rem;
 	}
+}
+
+/* Animations */
+main {
+	animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.3); }
+	100% { transform: scale(1); }
+}
+.pop-anim {
+	animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes typingBlink {
+	0% { opacity: 0.2; }
+	20% { opacity: 1; }
+	100% { opacity: 0.2; }
+}
+.typing-indicator {
+	animation: typingBlink 1.4s infinite both;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 

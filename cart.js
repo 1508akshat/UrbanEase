@@ -53,8 +53,15 @@
     const badge = document.querySelector('[data-cart-count]');
     if (!badge) return;
     const count = getCartCount();
+    const currentCount = parseInt(badge.textContent || '0', 10);
     badge.textContent = count > 0 ? String(count) : '0';
     badge.style.display = count > 0 ? 'inline-flex' : 'none';
+
+    if (count > currentCount && count > 0) {
+      badge.classList.remove('pop-anim');
+      void badge.offsetWidth; // trigger reflow
+      badge.classList.add('pop-anim');
+    }
   }
 
   function showToast(message) {
@@ -134,6 +141,13 @@
 
     renderCartBadge();
     renderCartPage();
+
+    window.addEventListener('storage', (e) => {
+      if (e.key === STORAGE_KEY) {
+        renderCartBadge();
+        renderCartPage();
+      }
+    });
   });
 })();
 
