@@ -14,10 +14,9 @@
             return;
         }
 
-        // Loading API key securely from config.js
-        const API_KEY = (typeof CONFIG !== 'undefined' && CONFIG.GEMINI_API_KEY) ? CONFIG.GEMINI_API_KEY : '';
-        // Use gemini-flash-latest to automatically use an available flash model under current quota
-        const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${API_KEY}`;
+        // The backend serverless function securely holds the API key now.
+        // We simply call our own Vercel API endpoint.
+        const API_URL = '/api/chat';
 
         let chatHistory = [];
 
