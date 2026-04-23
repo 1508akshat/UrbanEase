@@ -14,8 +14,8 @@
             return;
         }
 
-        // Using the newly provided API key
-        const API_KEY = 'AIzaSyDSHJBRqncfuGmstbbzB8XznaS9UY8Z1RA';
+        // Loading API key securely from config.js
+        const API_KEY = (typeof CONFIG !== 'undefined' && CONFIG.GEMINI_API_KEY) ? CONFIG.GEMINI_API_KEY : '';
         // Use gemini-flash-latest to automatically use an available flash model under current quota
         const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${API_KEY}`;
 
