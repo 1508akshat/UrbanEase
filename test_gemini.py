@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = 'AIzaSyDDMZbTBUaJ5CTGS0fCW8IiJSOQcAqNwjk'
+API_KEY = 'AIzaSyDSHJBRqncfuGmstbbzB8XznaS9UY8Z1RA'
 URL = f'https://generativelanguage.googleapis.com/v1beta/models?key={API_KEY}'
 
 response = requests.get(URL)
