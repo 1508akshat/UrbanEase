@@ -366,7 +366,7 @@ img {
 }
 
 .faq-section {
-	margin-bottom: 72px;
+	margin-bottom: 28px;
 }
 
 .faq-heading {
@@ -443,6 +443,41 @@ img {
 
 .faq-item[open] summary::after {
 	content: "-";
+}
+
+.blog-section {
+	margin-bottom: 72px;
+}
+
+.blog-card {
+	display: grid;
+	grid-template-columns: minmax(0, 1.7fr) auto;
+	align-items: center;
+	gap: 20px;
+	padding: 30px 28px;
+	border-radius: var(--radius);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background:
+		radial-gradient(circle at top right, rgba(0, 191, 166, 0.22), transparent 36%),
+		linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+	box-shadow: var(--shadow);
+}
+
+.blog-copy h2 {
+	margin: 12px 0 8px;
+	font-size: clamp(1.6rem, 3vw, 2.2rem);
+	line-height: 1.15;
+}
+
+.blog-copy p {
+	margin: 0;
+	max-width: 62ch;
+	color: var(--muted);
+}
+
+.blog-actions {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .about-grid {
@@ -986,6 +1021,15 @@ img {
 
 	.faq-item summary {
 		padding: 18px 36px 18px 0;
+	}
+
+	.blog-card {
+		grid-template-columns: 1fr;
+		padding: 24px 20px;
+	}
+
+	.blog-actions {
+		justify-content: flex-start;
 	}
 }
 
